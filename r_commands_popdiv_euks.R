@@ -13,8 +13,8 @@ library(stringi)
 library(lubridate)
 library(marmap)
 
-infofile1 <- "~/aquatic/popdiv/euka_pogenom/tara_metadata/TARA_SAMPLES_CONTEXT_SEQUENCING_20170515_mod.tab"
-infofile2 <- "~/aquatic/popdiv/euka_pogenom/tara_metadata/TARA_reg_stations_mod.tab"
+infofile1 <- "../tara_metadata/TARA_SAMPLES_CONTEXT_SEQUENCING_20170515_mod.tab"
+infofile2 <- "../tara_metadata/TARA_reg_stations_mod.tab"
 #mag_info_file = "~/aquatic/mag2.0/mag_summary_tables/Eukaryotic_MAG_summary.tab"
 #eggnog_annotations_file = "~/aquatic/popdiv/annotations/NOG.annotations.txt"
 #cog_categories_file = "~/aquatic/popdiv/annotations/cog_categories.txt"
@@ -32,7 +32,7 @@ genome = c(
   "T_pseudonana"
 )
 
-prefix <- paste("~/aquatic/popdiv/euka_pogenom/pogenom_output/mf1_mc10_ss10/", genome, "_mf1_mc10_ss10", sep = "")
+prefix <- paste("../pogenom_output/mf1_mc10_ss10/", genome, "_mf1_mc10_ss10", sep = "")
 #prefix <- paste("~/aquatic/popdiv/euka_pogenom/pogenom_output/mf1_mc10/", genome, "_mf1_mc10", sep = "")
 
 totpifile <- paste(prefix,  "intradiv.txt", sep = ".")
